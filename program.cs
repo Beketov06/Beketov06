@@ -5,23 +5,22 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<string> sortedList = new List<string>(); // создаем пустой список
-
-        while (true) // бесконечный цикл
+        List<string> sortedList = new List<string>(); 
+        while (true) 
         {
-            Console.WriteLine("Введите информацию:"); // просим пользователя ввести информацию
-            string input = Console.ReadLine(); // считываем введенную информацию
+            Console.WriteLine("Введите информацию:"); 
+            string input = Console.ReadLine(); 
 
-            if (input == "") // если пользователь нажал Enter без ввода информации, выходим из цикла
+            if (input == "") 
             {
                 break;
             }
 
-            sortedList.Add(input); // добавляем введенную информацию в список
-            sortedList.Sort(); // сортируем список по алфавиту
+            sortedList.Add(input); 
+            sortedList.Sort(); 
         }
 
-        Console.WriteLine("\nСписок:"); // выводим отсортированный список на экран
+        Console.WriteLine("\nСписок:"); 
         foreach (string item in sortedList)
         {
             Console.WriteLine(item);
